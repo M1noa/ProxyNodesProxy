@@ -24,8 +24,8 @@ function access(app) {
     app.search.input.focus();
 
 
-    app.nav.community = app.createLink('/kahoot.html', 'Kahoot Flooder');
-    app.nav.support = app.createLink('/blooket.html', 'Blooket Hacks');
+    app.nav.community = app.createLink('/kahoot/', 'Kahoot Flooder');
+    app.nav.support = app.createLink('/blooket/', 'Blooket Hacks');
     app.nav.apps = app.createLink('/?link=aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcHA%3D', 'Discord');
     app.nav.games = app.createLink('https://840p.ml', 'Games');
     app.nav.settings = app.createLink('#settings', '<i class="fas fa-sliders-h secondary"></i>', {
