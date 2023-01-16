@@ -39,7 +39,10 @@ async function options(app) {
         { id: 'none', content: 'None' }
     ]
 
-
+    const enableTips = [
+        { id: 'enabled', content: 'Enabled' },
+        { id: 'none', content: 'None' }
+    ]
 
     const selection = new Selection(app);
     const backgroundSelection = new Selection(app);
