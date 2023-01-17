@@ -83,6 +83,7 @@ body[data-appearance="midnight"] {
     --text-color: #FFF;
     --accent: dodgerblue;
     --background: #121212;
+    --font-family: Dosis;
     --scrollbar-thumb-color: rgb(32, 148, 252, 0.3);
     --scrollbar-track-color: rgb(32, 148, 252, 0.1);
 }

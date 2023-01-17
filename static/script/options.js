@@ -62,7 +62,7 @@ async function options(app) {
         document.body.setAttribute('data-appearance', id);
         localStorage.setItem('incog||appearance', id);
     });
-    selection.switchSelector((localStorage.getItem('incog||appearance') || 'ocean'));
+    selection.switchSelector((localStorage.getItem('incog||appearance') || 'midnight'));
     
     backgroundThemes.forEach(entry => {
         backgroundSelection.createSelector(entry.id, app.createElement('li', entry.content, {
