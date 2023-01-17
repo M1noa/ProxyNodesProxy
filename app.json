@@ -2,6 +2,6 @@
     "name": "Proxy",
     "description": "Proxy.",
     "repository": "https://github.com/M1noa",
-    "logo": "/static/index.png",
+    "logo": "/static/img/PN.png",
     "keywords": ["proxy", "bypass-filter"]
 }

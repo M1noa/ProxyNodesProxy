@@ -36,10 +36,10 @@ app.destroyParticles = function() {
 document.querySelector('#open-nav').addEventListener('click', app.openNav);
 document.querySelector('#close-nav').addEventListener('click', app.closeNav);
 
-document.title = localStorage.getItem('incog||title') || 'Pr0xy (;';
+document.title = localStorage.getItem('incog||title') || 'Proxy - Proxy Node$';
 window.icon = document.querySelector('#favicon');
 
-icon.href = localStorage.getItem('incog||icon') || './index.svg';
+icon.href = localStorage.getItem('incog||icon') || './img/PN.png';
 
 app.on('init', () => {
     app.icon = document.querySelector('#favicon');
@@ -61,7 +61,7 @@ app.on('init', () => {
             display: 'none',
         }
     });
-    app.search.logo = createLink('#', '<img class="hu" src="img/PN.svg"  width="50px" height="50px">', {
+    app.search.logo = createLink('#', '<img class="hu" src="img/PN.png"  width="50px" height="50px">', {
         style: {
             display: 'none'
         }
