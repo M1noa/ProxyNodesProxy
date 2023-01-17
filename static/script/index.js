@@ -61,7 +61,7 @@ app.on('init', () => {
             display: 'none',
         }
     });
-    app.search.logo = createLink('#', '<img class="nav-logo" src="img/PN.svg"  width="50px" height="50px"> ', {
+    app.search.logo = createLink('#', '<img class="hu" src="img/PN.svg"  width="50px" height="50px"><img class="nav-logo" src="img/PN.svg"  width="50px" height="50px">', {
         style: {
             display: 'none'
         }
