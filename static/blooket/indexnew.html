@@ -1,0 +1,43 @@
+<!DOCTYPE NETSCAPE-Bookmark-file-1>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+
+
+<TITLE>Blooket Cheats</TITLE>
+
+
+<script>
+axios.get("https://api.github.com/repos/Minesraft2/Blooket-Cheats/blob/main/obfuscated/Bookmarklets.html")
+  .then(response => {
+    // The response.data object contains the file's contents as a Base64-encoded string
+    const fileContent = atob(response.data.content);
+    // Use the fileContent to insert into your website's HTML
+    document.getElementById("example-div").innerHTML = fileContent;
+  })
+  .catch(error => {
+    console.log(error);
+  });
+</script>
+
+
+<a href="/" onclick="history.go(-1);">
+  <div class="back-button">Back
+    <i class="fas fa-arrow-left"></i>
+  </div>
+</a>
+<style>
+.back-button {
+  position: absolute;
+  top: 5px;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+
+.back-button i {
+  font-size: 18px;
+  vertical-align: middle;
+}
+</style>
