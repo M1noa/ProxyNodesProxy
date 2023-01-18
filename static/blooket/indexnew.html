@@ -7,19 +7,16 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 <script>
-  
-  axios.get("https://api.github.com/repos/Minesraft2/Blooket-Cheats/contents/obfuscated/Bookmarklets.html", {headers: {'Authorization': `Token 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`}})
+
+axios.get("https://raw.githubusercontent.com/Minesraft2/Blooket-Cheats/master/obfuscated/Bookmarklets.html", {headers: {'Authorization': `Token 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`}})
     .then(response => {
-      const fileContent = response.data;
-      const decodedContent = window.atob(fileContent.content);
-      const parser = new DOMParser();
-      const htmlDoc = parser.parseFromString(decodedContent, "text/html");
-      document.getElementById("example-div").appendChild(htmlDoc.body);
+      const decodedContent = response.data;
+      document.getElementById("example-div").innerHTML = decodedContent;
     })
     .catch(error => {
       console.log(error);
     });
-  
+
   </script>
   
 
