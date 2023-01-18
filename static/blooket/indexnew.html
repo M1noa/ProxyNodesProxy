@@ -8,8 +8,11 @@
 <script>
   axios.get("https://api.github.com/repos/Minesraft2/Blooket-Cheats/contents/obfuscated/Bookmarklets.html", {headers: {'Authorization': `Token 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`}})
     .then(response => {
-      const fileContent = response.data.content;
-      document.getElementById("example-div").innerHTML = atob(fileContent);
+      const fileContent = response.data;
+      const decodedContent = window.atob(fileContent.content);
+      const parser = new DOMParser();
+      const htmlDoc = parser.parseFromString(decodedContent, "text/html");
+      document.getElementById("example-div").appendChild(htmlDoc.body);
     })
     .catch(error => {
       console.log(error);
@@ -17,7 +20,6 @@
   
   </script>
   
-
 
 <a href="/" onclick="history.go(-1);">
   <div class="back-button">Back
