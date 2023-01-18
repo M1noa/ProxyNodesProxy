@@ -6,18 +6,16 @@
 
 
 <script>
-axios.get("https://api.github.com/repos/Minesraft2/Blooket-Cheats/blob/main/obfuscated/Bookmarklets.html")
+axios.get("https://api.github.com/repos/Minesraft2/Blooket-Cheats/contents/obfuscated/Bookmarklets.html", {headers: {'Authorization': `Token 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`}})
   .then(response => {
-    // The response.data object contains the file's contents as a Base64-encoded string
     const fileContent = atob(response.data.content);
-    // Use the fileContent to insert into your website's HTML
     document.getElementById("example-div").innerHTML = fileContent;
   })
   .catch(error => {
     console.log(error);
   });
-</script>
 
+</script>
 
 <a href="/" onclick="history.go(-1);">
   <div class="back-button">Back
