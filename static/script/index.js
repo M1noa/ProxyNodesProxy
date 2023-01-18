@@ -163,7 +163,7 @@ document.querySelector('.access-link').addEventListener('click', () => {
 });
 
 document.querySelector('.access-panel .controls .icon').addEventListener('error', event => {
-    event.target.src = 'img/globe.svg';
+    event.target.src = 'img/PN.png';
 });
 
 
