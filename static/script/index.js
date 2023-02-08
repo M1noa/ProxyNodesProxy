@@ -36,7 +36,7 @@ app.destroyParticles = function() {
 document.querySelector('#open-nav').addEventListener('click', app.openNav);
 document.querySelector('#close-nav').addEventListener('click', app.closeNav);
 
-document.title = localStorage.getItem('incog||title') || 'Proxy - Proxy Nodes';
+document.title = localStorage.getItem('incog||title') || '𝙿𝚛𝚘𝚡𝚢 - 𝙋𝙧𝙤𝙭𝙮 𝙉𝙤𝙙𝙚𝙨';
 window.icon = document.querySelector('#favicon');
 
 icon.href = localStorage.getItem('incog||icon') || './img/PN.png';
